@@ -280,12 +280,6 @@ vector<int> sortAlg() {
 	  
 void binaryAlg() {
 
-   vector<int> ints;
-   ints = sortAlg();
-
-   int from = 0;
-   int to = ints.size()-1;
-
    int temp;
    cout << "What value would you like to search for? ";
    cin >> temp; 
@@ -296,10 +290,16 @@ void binaryAlg() {
       cout << "Bad input, returning to menu" << endl;
       return;
    }
-   
+
+   vector<int> ints;
+   int from = 0;
+   int to = ints.size()-1;
+
+   ints = sortAlg();
+
    std::chrono::high_resolution_clock clck;
    std::chrono::high_resolution_clock::time_point start = clck.now();
-  
+
    int loc = binSearch(ints, temp, 0, ints.size()-1);
 
    std::chrono::high_resolution_clock::time_point end = clck.now();

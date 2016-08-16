@@ -1,0 +1,5 @@
+        Name|   Quantity|   Unit Type|      Price
+     Bananas|       2.00|         lbs|      1.99
+Cream Cheese|       4.00|         bar|      2.99
+       Sugar|       0.50|         lbs|      2.00
+      butter|       1.00|         lbs|      0.89

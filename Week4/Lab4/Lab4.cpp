@@ -24,17 +24,10 @@ int main()
    int* numbers;
    numbers = new int[die1Sides + die2Sides];
 
-   char answer;
-
    do {
 
-      // cout << "Roll number " << ++counter << ": ";
       int diceRoll = rollTwoDice(d1, d2);
       numbers[diceRoll-1]++;
-      //cout << diceRoll << endl;
-      // cout << "Again?" << endl;
-      // answer = cin.get();
-		// cin.ignore(100, '\n');
       counter--;
    } while (counter > 0);// tolower(answer) != 'n');
 

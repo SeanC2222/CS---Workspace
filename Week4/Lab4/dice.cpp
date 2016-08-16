@@ -1,3 +1,6 @@
+#ifndef DICE_CPP
+#define DICE_CPP
+
 #include <cstdlib>
 #include <ctime>
 class Dice
@@ -67,3 +70,5 @@ int LoadedDice::rollDice() const
       }
    }
 }
+
+#endif
